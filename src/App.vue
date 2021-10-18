@@ -1,17 +1,58 @@
 <template>
   <div id="app">
-    <todo />
+    <Todo v-bind:todos = "todos"></Todo>
   </div>
 </template>
 
 <script>
-import todo from './components/todo'
+import Todo from './components/task'
 
 export default {
   name: 'App',
   components: {
-    todo
-  }
+    Todo
+  },
+   data() {
+    return {
+      todos: [
+        {
+          id: 1,
+          title: "Learn Vue JS",
+          completed: true,
+          time: '17:05',
+          date: '29-04-2021'
+        },
+        {
+          id: 2,
+          title: "Watch netflix",
+          completed: true,
+          time: '17:05',
+          date: '29-04-2021'
+        },
+        {
+          id: 3,
+          title: "Go shopping",
+          completed: false,
+          time: '17:05',
+          date: '29-04-2021'
+        },
+        {
+          id: 4,
+          title: "Learn guitar",
+          completed: false,
+          time: '17:05',
+          date: '29-04-2021'
+        },
+        {
+          id: 5,
+          title: "Send email",
+          completed: false,
+          time: '17:05',
+          date: '29-04-2021'
+        },
+      ],
+    };
+   }
 }
 </script>
 

@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #4ec5c1;
+    color: #333;
+}
+
+#app{
+    padding: 60px 0px;
+}
+input[type="text"]{
+  height: 30%;
+  padding: 15px;
+}
+input[type="time"],input[type="date"]{
+  height: 30%;
+  padding: 10px;
+}
+
+  button {
+    cursor: pointer;
+    color: #555;
+    transition: all 0.3s linear;
+  }
+
+  button:focus {
+    outline: none;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .plus{
+    background: none;
+    border: none;
+    color: #4ec5c1;
+    font-size: 49px;
+    cursor: pointer;
+  }
+
+  .buttons button{
+    width: 100%;
+    background: #4ec5c1;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 5px;
+  }
+
+  .buttons button:hover{
+      background: #333;
+  }
+
+  .message button{
+      background: none;
+      border: none;
+  }
+
+  .message button:hover{
+      columns: #4ec5c1;
+  }
+
+  .message .toggle i{
+    margin: 0 10px 0 0;
+    font-size: 14px;
+  }
+
+  .message .toggle.toggle-completed{
+      text-decoration: line-through;
+  }
+
+  .show{
+    display: flex;
+  }
+
+  .show p{
+    margin-right: 30px;
+  }
+
+::-webkit-scrollbar {
+    width: 0; 
+    background: transparent; 
+}

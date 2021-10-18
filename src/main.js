@@ -7,6 +7,7 @@ import App from './App'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+import './assets/CSS/main.css'
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
